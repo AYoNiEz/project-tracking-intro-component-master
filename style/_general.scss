@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+main{
+    overflow: hidden;
+    background-image: white;
+    .container{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        margin-bottom: 3rem;
+        .content-wrapper{
+            display: flex;
+            flex-direction: column;
+            .banner{
+                width: 100%;
+                z-index: 555;
+                padding: 1rem 0.7rem;
+                overflow: hidden;
+                img{
+                    width: 140%;
+                 }
+            }
+            .text-box{
+                margin: 3rem 2rem;
+                .top{
+                    margin: 1rem 0rem;
+                    display: flex;
+                    align-items: center;
+                    .new{
+                        margin-right: 1rem;
+                        padding: 0.2rem 0.7rem;
+                        background-color: #222842;
+                        color: white;
+                        font-size: 16px;
+                        font-weight: 700;
+                        border-radius: 2rem;
+                    }
+                    .dashboard{
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        font-weight: 400;
+                        letter-spacing: 0.3rem;
+                        color: #bbbbc0;
+                    }
+                }
+                .middle{
+                    h1{
+                        font-size: 40px;
+                        color: #222842;
+                        text-transform: uppercase;
+                        line-height: 2.5rem;
+                        
+                        span{
+                            display: block;
+                            overflow: hidden;
+    
+                        }
+                    }
+                    p{
+                        font-family: 'Barlow', sans-serif;
+                        font-size: 18px;
+                        margin-top: 1rem;
+                        color: #7d7d7d;
+                        margin-right: 1rem;
+    
+                    }
+                }
+                .bottom{
+                    margin-top: 1rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .schedule-btn{
+                        text-align: center;
+                        background-color: #ff5d5e;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: white;
+                        padding: 0.7rem 1.5rem;
+                        border-radius: 0.3rem;
+                        letter-spacing: 1px;
+                    }
+                    .schedule-btn:hover{
+                        background-color: #ff8584;
+                    }
+                    .preview-btn{
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        font-weight: 400;
+                        letter-spacing: 2px;
+                        color: #bbbbc0;
+                        padding: 0.7rem 0.5rem;
+                    }
+                }
+            }
+        }
+        .background{
+            width: 70%;
+            height: 500px;
+            background-color: #edf2f6;
+            border-radius: 4rem;
+            position: absolute;
+            top: -110px;
+            right: -75px;
+            z-index: -1;
+        }
+    }
+    
+}
